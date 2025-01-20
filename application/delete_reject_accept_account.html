@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Dear {{ email }},</h2>
+        {% if status=="delete" %}
+            {% if not active %}
+            <p>Your Account Request got Rejected as it did not align with out Policies.<br>If you think something went wrong
+                feel free to re-Register.
+            </p>
+            {% else %}
+            <p>Your account was successfully deleted.</p>
+            {% endif %}
+        {% else %}
+        <p>Your account was successfully Approved.</p>
+        {% endif %}
+        <footer>
+            <p>Best regards,</p>
+            <p>SYNC</p>
+        </footer>
+    </div>
+</body>
+
+</html>

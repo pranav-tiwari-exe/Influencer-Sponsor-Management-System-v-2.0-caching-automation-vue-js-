@@ -1,0 +1,12 @@
+:root {
+    --primary-color: #6600FF; /* Primary color */
+    --secondary-color: #001220; /* Secondary color */
+    --accent-color: #4D007F; /* Accent color */
+    --hover-color: #5F0099; /* Hover color */
+    --error-color: #9900FF; /* Error color */
+    --light-bg: #0C1826; /* Light background color */
+    --white: #ffffff; /* White color */
+    --black: #464646bf; /* Text color */
+    --shadow-light: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light box shadow */
+    --shadow-hover: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hover box shadow */
+}
