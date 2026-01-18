@@ -6,7 +6,7 @@ from email.mime.text import MIMEText
 SMTP_HOST="localhost"
 SMTP_PORT=1025
 SENDER_EMAIL='adobesoftware765@gmail.com'
-SENDER_PASSWORD='adoberajaaa2004'
+SENDER_PASSWORD='*********'
 
 def send_email(to,subject,content):
     msg=MIMEMultipart()
